@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" fx:controller="Controllers.UserController" prefHeight="529.0" prefWidth="822.0" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="10.0" layoutY="37.0" prefHeight="31.0" prefWidth="110.0" text="Watch Later" />
+      <TableView layoutX="137.0" layoutY="37.0" prefHeight="200.0" prefWidth="677.0">
+        <columns>
+          <TableColumn prefWidth="65.0" text="Budget" />
+          <TableColumn prefWidth="50.0" text="Genre" />
+          <TableColumn prefWidth="45.0" text="Title" />
+          <TableColumn prefWidth="104.0" text="Release Date" />
+          <TableColumn text="Revenue" />
+          <TableColumn prefWidth="68.0" text="Runtime" />
+          <TableColumn prefWidth="65.0" text="TagLine" />
+          <TableColumn prefWidth="103.0" text="Vote Average" />
+            <TableColumn prefWidth="95.0" text="Vote Count" />
+        </columns>
+      </TableView>
+      <TextField layoutX="10.0" layoutY="276.0" prefHeight="31.0" prefWidth="110.0" text="Liked Movies" />
+      <ListView layoutX="167.0" layoutY="276.0" prefHeight="224.0" prefWidth="356.0" />
+      <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#goMain">
+         <image>
+            <Image url="@../icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

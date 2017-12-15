@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SearchController">
+   <children>
+
+      <TextField fx:id="searchedText" layoutX="47.0" layoutY="34.0" prefHeight="31.0" prefWidth="179.0" promptText="Thor" />
+      <Button layoutX="250.0" layoutY="37.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <Label fx:id="nameOfTheMovie" layoutX="137.0" layoutY="140.0" maxWidth="300" wrapText="true" />
+      <Label fx:id="releaseDate" layoutX="137.0" layoutY="192.0" maxWidth="300" wrapText="true" />
+      <Label fx:id="category" layoutX="137.0" layoutY="242.0" maxWidth="300" wrapText="true" />
+      <Label fx:id="overview" layoutX="367.0" layoutY="140.0" maxWidth="300" wrapText="true" />
+      <Label layoutX="20.0" layoutY="140.0" text="Name of the movie: " />
+      <Label layoutX="20.0" layoutY="192.0" text="Release Date:" />
+      <Label layoutX="20.0" layoutY="242.0" text="Category: " />
+      <Label layoutX="302.0" layoutY="140.0" text="Overview: " />
+      <Label layoutX="321.0" layoutY="41.0" prefHeight="17.0" prefWidth="222.0" text="Example movies are : Thor, Salt, Ant-Man" />
+      <ImageView fitHeight="31.0" fitWidth="40.0" layoutX="-6.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#goMain">
+         <image>
+            <Image url="@../icon.png" />
+         </image></ImageView>
+
+   </children>
+</AnchorPane>

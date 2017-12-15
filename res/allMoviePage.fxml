@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AllMoviesController">
+   <children>
+      <ListView fx:id="allMoviesListView" layoutX="24.0" layoutY="23.0" prefHeight="424.0" prefWidth="652.0" />
+      <ImageView fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#goMain">
+         <image>
+            <Image url="@../icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
